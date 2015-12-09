@@ -1,0 +1,4 @@
+[Oct 06 2015 09:45:58.000000 - INFO] service=NetworkService method=getCurrentNetwork responseTime=180 requestId=d0eb7a2f7217dcdf8354c363ac80a561 server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:45:59.000000 - ERROR] service=ForecastService method=getAvailabilityForecast responseTime=0 requestId= server=ads.google.com isFault=1 faultMessage=Unmarshalling Error: For input string: "INSERT_ADVERTISER_COMPANY_ID_HERE" 
+[Oct 06 2015 09:46:17.000000 - ERROR] service=ForecastService method=getAvailabilityForecastById responseTime=0 requestId= server=ads.google.com isFault=1 faultMessage=Unmarshalling Error: For input string: "INSERT_LINE_ITEM_ID_HERE" 
+[Oct 06 2015 09:46:39.000000 - ERROR] service=ForecastService method=getDeliveryForecastByIds responseTime=0 requestId= server=ads.google.com isFault=1 faultMessage=Unmarshalling Error: For input string: "INSERT_LINE_ITEM_ID_HERE" 

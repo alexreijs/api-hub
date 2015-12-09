@@ -1,0 +1,65 @@
+[Oct 05 2015 16:55:02.000000 - ERROR] POST /apis/ads/publisher/v201508/NetworkService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 299
+Authorization: Bearer ya29.AwJT5fJ3UsNEzrD3kmpBHz5gduhTiArSlLIEuaBtIr9-22xXn-CK9DEb6s9OsIKc9mx_
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:makeTestNetwork/>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:55:02 GMT
+Expires: Mon, 05 Oct 2015 14:55:02 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 444
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>b3ccf427e1ff497529067aeb4b0decde</requestId>
+      <responseTime>216</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.GOOGLE_ACCOUNT_ALREADY_ASSOCIATED_WITH_NETWORK @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.GOOGLE_ACCOUNT_ALREADY_ASSOCIATED_WITH_NETWORK @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.GOOGLE_ACCOUNT_ALREADY_ASSOCIATED_WITH_NETWORK</errorString>
+            <reason>GOOGLE_ACCOUNT_ALREADY_ASSOCIATED_WITH_NETWORK</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+

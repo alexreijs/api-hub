@@ -1,0 +1,3 @@
+[Oct 05 2015 16:35:07.000000 - ERROR] service=OrderService method=getOrdersByStatement responseTime=107 requestId=d5b5f58f80f802a5668ebee0e7e7b78e server=ads.google.com isFault=1 faultMessage=[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]
+[Oct 05 2015 16:55:15.000000 - ERROR] service=OrderService method=getOrdersByStatement responseTime=110 requestId=5e9879b1dc4f421caf861507699000c0 server=ads.google.com isFault=1 faultMessage=[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]
+[Oct 05 2015 16:55:27.000000 - INFO] service=OrderService method=getOrdersByStatement responseTime=1166 requestId=a15aed60c7ad8070f27005f676d783b7 server=ads.google.com isFault=0 faultMessage=null

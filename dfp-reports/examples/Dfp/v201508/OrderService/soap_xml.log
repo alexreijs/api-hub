@@ -1,0 +1,138 @@
+[Oct 05 2015 16:35:07.000000 - ERROR] POST /apis/ads/publisher/v201508/OrderService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 349
+Authorization: Bearer ya29.AwJPczia3F3Bls-WfauarydAQls8LZS3TubWMX-JFLftd6PoKsh1NlB6sVrKzc7MO8Ne4Q
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getOrdersByStatement>
+      <ns1:filterStatement>
+        <ns1:query>ORDER BY id ASC LIMIT 500</ns1:query>
+      </ns1:filterStatement>
+    </ns1:getOrdersByStatement>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:35:07 GMT
+Expires: Mon, 05 Oct 2015 14:35:07 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 418
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>d5b5f58f80f802a5668ebee0e7e7b78e</requestId>
+      <responseTime>107</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 16:55:15.000000 - ERROR] POST /apis/ads/publisher/v201508/OrderService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 349
+Authorization: Bearer ya29.AwLfTpjfdlQWFqW-uqX88DUHLPGUZVyuAi7BPkkN-UK3PZV_CGIijzB1IazJJH331_7m
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getOrdersByStatement>
+      <ns1:filterStatement>
+        <ns1:query>ORDER BY id ASC LIMIT 500</ns1:query>
+      </ns1:filterStatement>
+    </ns1:getOrdersByStatement>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:55:15 GMT
+Expires: Mon, 05 Oct 2015 14:55:15 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 418
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>5e9879b1dc4f421caf861507699000c0</requestId>
+      <responseTime>110</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+

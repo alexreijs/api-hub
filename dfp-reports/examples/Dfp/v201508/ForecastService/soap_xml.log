@@ -1,0 +1,200 @@
+[Oct 06 2015 09:45:59.000000 - ERROR] POST /apis/ads/publisher/v201508/ForecastService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 824
+Authorization: Bearer ya29.BAIZ4lHHoAxlpQ6Ck3K-9abe3kw2wP2uYjLfPRdraQQlXAyoq0tPiC2PesKVZm_nqBbk
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getAvailabilityForecast>
+      <ns1:lineItem>
+        <ns1:lineItem>
+          <ns1:startDateTimeType>IMMEDIATELY</ns1:startDateTimeType>
+          <ns1:endDateTime>
+            <ns1:date>
+              <ns1:year>2015</ns1:year>
+              <ns1:month>11</ns1:month>
+              <ns1:day>5</ns1:day>
+            </ns1:date>
+            <ns1:hour>3</ns1:hour>
+            <ns1:minute>45</ns1:minute>
+            <ns1:second>58</ns1:second>
+            <ns1:timeZoneID>America/New_York</ns1:timeZoneID>
+          </ns1:endDateTime>
+          <ns1:creativeRotationType>OPTIMIZED</ns1:creativeRotationType>
+          <ns1:roadblockingType>ONE_OR_MORE</ns1:roadblockingType>
+          <ns1:lineItemType>SPONSORSHIP</ns1:lineItemType>
+          <ns1:costType>CPM</ns1:costType>
+          <ns1:creativePlaceholders>
+            <ns1:size>
+              <ns1:width>300</ns1:width>
+              <ns1:height>250</ns1:height>
+              <ns1:isAspectRatio>false</ns1:isAspectRatio>
+            </ns1:size>
+          </ns1:creativePlaceholders>
+          <ns1:primaryGoal>
+            <ns1:goalType>DAILY</ns1:goalType>
+            <ns1:unitType>IMPRESSIONS</ns1:unitType>
+            <ns1:units>50</ns1:units>
+          </ns1:primaryGoal>
+          <ns1:targeting>
+            <ns1:inventoryTargeting>
+              <ns1:targetedAdUnits>
+                <ns1:adUnitId>24112640</ns1:adUnitId>
+                <ns1:includeDescendants>true</ns1:includeDescendants>
+              </ns1:targetedAdUnits>
+            </ns1:inventoryTargeting>
+          </ns1:targeting>
+        </ns1:lineItem>
+        <ns1:advertiserId>INSERT_ADVERTISER_COMPANY_ID_HERE</ns1:advertiserId>
+      </ns1:lineItem>
+      <ns1:forecastOptions>
+        <ns1:includeTargetingCriteriaBreakdown>true</ns1:includeTargetingCriteriaBreakdown>
+        <ns1:includeContendingLineItems>true</ns1:includeContendingLineItems>
+      </ns1:forecastOptions>
+    </ns1:getAvailabilityForecast>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Tue, 06 Oct 2015 07:45:59 GMT
+Expires: Tue, 06 Oct 2015 07:45:59 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 194
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "INSERT_ADVERTISER_COMPANY_ID_HERE" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 06 2015 09:46:17.000000 - ERROR] POST /apis/ads/publisher/v201508/ForecastService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 413
+Authorization: Bearer ya29.BALvrfbRe_wS-SjB0sf8x_Z05Ln3001szoCh5JEW_zDJ37ZFw7OTZQc6T3-b7jZsc5us
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getAvailabilityForecastById>
+      <ns1:lineItemId>INSERT_LINE_ITEM_ID_HERE</ns1:lineItemId>
+      <ns1:forecastOptions>
+        <ns1:includeTargetingCriteriaBreakdown>true</ns1:includeTargetingCriteriaBreakdown>
+        <ns1:includeContendingLineItems>true</ns1:includeContendingLineItems>
+      </ns1:forecastOptions>
+    </ns1:getAvailabilityForecastById>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Tue, 06 Oct 2015 07:46:17 GMT
+Expires: Tue, 06 Oct 2015 07:46:17 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 186
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "INSERT_LINE_ITEM_ID_HERE" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 06 2015 09:46:39.000000 - ERROR] POST /apis/ads/publisher/v201508/ForecastService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 362
+Authorization: Bearer ya29.BAIaIUDCX1v0wFNL9rc849JFjb_jpeuA6NnWwGJ53briXYdo5WYfwaSxyVhEw0-AyjcL
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getDeliveryForecastByIds>
+      <ns1:lineItemIds>INSERT_LINE_ITEM_ID_HERE</ns1:lineItemIds>
+      <ns1:lineItemIds>INSERT_LINE_ITEM_ID_HERE</ns1:lineItemIds>
+      <ns1:forecastOptions/>
+    </ns1:getDeliveryForecastByIds>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Tue, 06 Oct 2015 07:46:39 GMT
+Expires: Tue, 06 Oct 2015 07:46:39 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 186
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "INSERT_LINE_ITEM_ID_HERE" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+

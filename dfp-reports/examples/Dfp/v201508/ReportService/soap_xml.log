@@ -1,0 +1,750 @@
+[Oct 05 2015 11:22:03.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 442
+Authorization: Bearer ya29.AwKoYQ0ZN2PQOgpw974lFRs_8SxGIIQyP9ijtVHDlthNZHUM-4yp7B6EFAjgDyVnrMO9
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>INSERT_NETWORK_CODE_HERE</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_NAME</ns1:dimensions>
+          <ns1:columns>REACH_FREQUENCY</ns1:columns>
+          <ns1:columns>REACH_AVERAGE_REVENUE</ns1:columns>
+          <ns1:columns>REACH</ns1:columns>
+          <ns1:dateRangeType>REACH_LIFETIME</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:22:02 GMT
+Expires: Mon, 05 Oct 2015 09:22:02 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 444
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>fe07d1c865974a07d4d0aad27f23f022</requestId>
+      <responseTime>807</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NETWORK_NOT_FOUND @ ; trigger:'INSERT_NETWORK_CODE_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NETWORK_NOT_FOUND @ ; trigger:'INSERT_NETWORK_CODE_HERE']</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger>INSERT_NETWORK_CODE_HERE</trigger>
+            <errorString>AuthenticationError.NETWORK_NOT_FOUND</errorString>
+            <reason>NETWORK_NOT_FOUND</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 11:24:14.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 442
+Authorization: Bearer ya29.AwJ18t4zbHsZzbZcOVxcOFuz8gUr3kmqGXL35y7CWUgOwgKVTMv8p8FhmxrKyzWGF7OY
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>INSERT_NETWORK_CODE_HERE</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_NAME</ns1:dimensions>
+          <ns1:columns>REACH_FREQUENCY</ns1:columns>
+          <ns1:columns>REACH_AVERAGE_REVENUE</ns1:columns>
+          <ns1:columns>REACH</ns1:columns>
+          <ns1:dateRangeType>REACH_LIFETIME</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:24:13 GMT
+Expires: Mon, 05 Oct 2015 09:24:13 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 445
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>53407871d112c64e3cd582da221aa567</requestId>
+      <responseTime>120</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NETWORK_NOT_FOUND @ ; trigger:'INSERT_NETWORK_CODE_HERE']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NETWORK_NOT_FOUND @ ; trigger:'INSERT_NETWORK_CODE_HERE']</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger>INSERT_NETWORK_CODE_HERE</trigger>
+            <errorString>AuthenticationError.NETWORK_NOT_FOUND</errorString>
+            <reason>NETWORK_NOT_FOUND</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 11:24:23.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 424
+Authorization: Bearer ya29.AwLTRK2wxFeSPR4GtTmmnMV0h2Ubw995TLqBnw7TGlj52TwgyfRp3hNR3C905h7gSkrb
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_NAME</ns1:dimensions>
+          <ns1:columns>REACH_FREQUENCY</ns1:columns>
+          <ns1:columns>REACH_AVERAGE_REVENUE</ns1:columns>
+          <ns1:columns>REACH</ns1:columns>
+          <ns1:dateRangeType>REACH_LIFETIME</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:24:22 GMT
+Expires: Mon, 05 Oct 2015 09:24:22 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 417
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>c0a60afc04d65ffeebdcc06d02a237f0</requestId>
+      <responseTime>120</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 11:27:38.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 637
+Authorization: Bearer ya29.AwLHPfGk0PK40O5medwqmLiqUnx0tirKztrOTIjk3odOiIgymZulL_JNF-IWgw8L5_LH
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>99450338</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>AD_UNIT_ID</ns1:dimensions>
+          <ns1:dimensions>AD_UNIT_NAME</ns1:dimensions>
+          <ns1:adUnitView>HIERARCHICAL</ns1:adUnitView>
+          <ns1:columns>AD_SERVER_IMPRESSIONS</ns1:columns>
+          <ns1:columns>AD_SERVER_CLICKS</ns1:columns>
+          <ns1:columns>DYNAMIC_ALLOCATION_INVENTORY_LEVEL_IMPRESSIONS</ns1:columns>
+          <ns1:columns>DYNAMIC_ALLOCATION_INVENTORY_LEVEL_CLICKS</ns1:columns>
+          <ns1:columns>TOTAL_INVENTORY_LEVEL_IMPRESSIONS</ns1:columns>
+          <ns1:columns>TOTAL_INVENTORY_LEVEL_CPM_AND_CPC_REVENUE</ns1:columns>
+          <ns1:dateRangeType>YESTERDAY</ns1:dateRangeType>
+          <ns1:statement>
+            <ns1:query>WHERE PARENT_AD_UNIT_ID = :parentAdUnitId</ns1:query>
+            <ns1:values>
+              <ns1:key>parentAdUnitId</ns1:key>
+              <ns1:value xsi:type="ns1:NumberValue">
+                <ns1:value>98450458</ns1:value>
+              </ns1:value>
+            </ns1:values>
+          </ns1:statement>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:27:38 GMT
+Expires: Mon, 05 Oct 2015 09:27:38 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 457
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>09c29160809516928c4a7b88c2eb1e3f</requestId>
+      <responseTime>3359</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[ReportError.DIMENSION_VIEW_NOT_ALLOWED @ dimensions; trigger:'PARENT_AD_UNIT_ID']</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[ReportError.DIMENSION_VIEW_NOT_ALLOWED @ dimensions; trigger:'PARENT_AD_UNIT_ID']</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ReportError">
+            <fieldPath>dimensions</fieldPath>
+            <trigger>PARENT_AD_UNIT_ID</trigger>
+            <errorString>ReportError.DIMENSION_VIEW_NOT_ALLOWED</errorString>
+            <reason>DIMENSION_VIEW_NOT_ALLOWED</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 11:59:18.000000 - ERROR] POST /apis/ads/publisher/v201508/NetworkService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 299
+Authorization: Bearer ya29.AwKOmtscuH6fIU95zWISUIw5CmtZJpYKYFncHyR0FfrUz7i6w8qtlBcfcRX7UiiMa707
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getCurrentNetwork/>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:59:18 GMT
+Expires: Mon, 05 Oct 2015 09:59:18 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 420
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>3d5f367d70dc97927b867641cabde0fe</requestId>
+      <responseTime>111</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 11:59:28.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 424
+Authorization: Bearer ya29.AwJOwBT9zqjew8LTcf-Z2H1d7MAeve4MiXWxOOgwRbEymFpzAqitFLdS-GwAHqxjbm41
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_NAME</ns1:dimensions>
+          <ns1:columns>REACH_FREQUENCY</ns1:columns>
+          <ns1:columns>REACH_AVERAGE_REVENUE</ns1:columns>
+          <ns1:columns>REACH</ns1:columns>
+          <ns1:dateRangeType>REACH_LIFETIME</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 09:59:27 GMT
+Expires: Mon, 05 Oct 2015 09:59:27 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 418
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>b45e8038625cce9bfc8451efe83e0b36</requestId>
+      <responseTime>136</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 16:34:32.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 424
+Authorization: Bearer ya29.AwK0QRdorYTdyOhLXuBmohWVxunrx6RsWkiVjPkMe0RnELosrHV3a4xICxPhdoZEw_S2og
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_NAME</ns1:dimensions>
+          <ns1:columns>REACH_FREQUENCY</ns1:columns>
+          <ns1:columns>REACH_AVERAGE_REVENUE</ns1:columns>
+          <ns1:columns>REACH</ns1:columns>
+          <ns1:dateRangeType>REACH_LIFETIME</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:34:32 GMT
+Expires: Mon, 05 Oct 2015 14:34:32 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 422
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>3371d7886774f992afb8eb58600747b1</requestId>
+      <responseTime>116</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 16:34:47.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 443
+Authorization: Bearer ya29.AwKvZW-lgU-SlClgUmqzlFeUZuMrCOdqhJn8UxP6bysk2uuiB_QgSG2Ajvt0dAiO32qIug
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>DATE</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:columns>AD_SERVER_IMPRESSIONS</ns1:columns>
+          <ns1:customFieldIds>INSERT_CUSTOM_FIELD_ID_HERE</ns1:customFieldIds>
+          <ns1:dateRangeType>LAST_MONTH</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:34:47 GMT
+Expires: Mon, 05 Oct 2015 14:34:47 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 190
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "INSERT_CUSTOM_FIELD_ID_HERE" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 16:34:52.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 686
+Authorization: Bearer ya29.AwJJ1Ddkbc3A0_RankyI2PNAb3qVjew8aL1u7VYxDIYLnyoODWdj-CRvt86hrBISGqz_EA
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>ORDER_ID</ns1:dimensions>
+          <ns1:dimensions>ORDER_NAME</ns1:dimensions>
+          <ns1:columns>AD_SERVER_IMPRESSIONS</ns1:columns>
+          <ns1:columns>AD_SERVER_CLICKS</ns1:columns>
+          <ns1:columns>AD_SERVER_CTR</ns1:columns>
+          <ns1:columns>AD_SERVER_CPM_AND_CPC_REVENUE</ns1:columns>
+          <ns1:columns>AD_SERVER_WITHOUT_CPD_AVERAGE_ECPM</ns1:columns>
+          <ns1:dimensionAttributes>ORDER_TRAFFICKER</ns1:dimensionAttributes>
+          <ns1:dimensionAttributes>ORDER_START_DATE_TIME</ns1:dimensionAttributes>
+          <ns1:dimensionAttributes>ORDER_END_DATE_TIME</ns1:dimensionAttributes>
+          <ns1:startDate>
+            <ns1:year>2015</ns1:year>
+            <ns1:month>9</ns1:month>
+            <ns1:day>25</ns1:day>
+          </ns1:startDate>
+          <ns1:endDate>
+            <ns1:year>2015</ns1:year>
+            <ns1:month>10</ns1:month>
+            <ns1:day>5</ns1:day>
+          </ns1:endDate>
+          <ns1:dateRangeType>CUSTOM_DATE</ns1:dateRangeType>
+          <ns1:statement>
+            <ns1:query>WHERE order_id = :orderId</ns1:query>
+            <ns1:values>
+              <ns1:key>orderId</ns1:key>
+              <ns1:value xsi:type="ns1:TextValue">
+                <ns1:value>INSERT_ORDER_ID_HERE</ns1:value>
+              </ns1:value>
+            </ns1:values>
+          </ns1:statement>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:34:52 GMT
+Expires: Mon, 05 Oct 2015 14:34:52 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 419
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <ResponseHeader xmlns="https://www.google.com/apis/ads/publisher/v201508">
+      <requestId>1460e46a8e638109f6e91592522a363e</requestId>
+      <responseTime>132</responseTime>
+    </ResponseHeader>
+  </soap:Header>
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Server</faultcode>
+      <faultstring>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</faultstring>
+      <detail>
+        <ApiExceptionFault xmlns="https://www.google.com/apis/ads/publisher/v201508">
+          <message>[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]</message>
+          <errors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="AuthenticationError">
+            <fieldPath/>
+            <trigger/>
+            <errorString>AuthenticationError.NO_NETWORKS_TO_ACCESS</errorString>
+            <reason>NO_NETWORKS_TO_ACCESS</reason>
+          </errors>
+        </ApiExceptionFault>
+      </detail>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+
+[Oct 05 2015 16:35:02.000000 - ERROR] POST /apis/ads/publisher/v201508/ReportService HTTP/1.1
+Host: ads.google.com
+Connection: Keep-Alive
+User-Agent: PHP-SOAP/5.6.10, gzip
+Accept-Encoding: gzip, deflate
+Content-Encoding: gzip
+Content-Type: text/xml; charset=utf-8
+SOAPAction: ""
+Content-Length: 443
+Authorization: Bearer ya29.AwIUraKxt9tJu_k5a0nwNlG4ulUEx51ezNDTJR8IbA0lxfMB134eVV9M8EATchn38Wfv2g
+
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="https://www.google.com/apis/ads/publisher/v201508">
+  <SOAP-ENV:Header>
+    <ns1:RequestHeader>
+      <ns1:networkCode>4442</ns1:networkCode>
+      <ns1:applicationName>DFP Reports (DfpApi-PHP/6.3.0, Common-PHP/6.3.0, PHP/5.6.10)</ns1:applicationName>
+    </ns1:RequestHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:runReportJob>
+      <ns1:reportJob>
+        <ns1:reportQuery>
+          <ns1:dimensions>DATE</ns1:dimensions>
+          <ns1:dimensions>LINE_ITEM_ID</ns1:dimensions>
+          <ns1:columns>AD_SERVER_IMPRESSIONS</ns1:columns>
+          <ns1:customFieldIds>INSERT_CUSTOM_FIELD_ID_HERE</ns1:customFieldIds>
+          <ns1:dateRangeType>LAST_MONTH</ns1:dateRangeType>
+        </ns1:reportQuery>
+      </ns1:reportJob>
+    </ns1:runReportJob>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+HTTP/1.1 500 Internal Server Error
+Content-Type: text/xml; charset=UTF-8
+Content-Encoding: gzip
+Date: Mon, 05 Oct 2015 14:35:02 GMT
+Expires: Mon, 05 Oct 2015 14:35:02 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+Content-Length: 190
+Server: GSE
+Alternate-Protocol: 443:quic,p=1
+Alt-Svc: quic=":443"; p="1"; ma=604800
+
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <soap:Fault>
+      <faultcode>soap:Client</faultcode>
+      <faultstring>Unmarshalling Error: For input string: "INSERT_CUSTOM_FIELD_ID_HERE" </faultstring>
+    </soap:Fault>
+  </soap:Body>
+</soap:Envelope>
+

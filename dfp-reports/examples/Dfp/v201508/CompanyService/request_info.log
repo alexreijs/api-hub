@@ -1,0 +1,8 @@
+[Oct 06 2015 09:18:03.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=1009 requestId=5d44453205353211a11c27cc40688cae server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:18:25.000000 - ERROR] service=CompanyService method=getCompaniesByStatement responseTime=115 requestId=04687121229e169d51c98da689e45edd server=ads.google.com isFault=1 faultMessage=[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]
+[Oct 06 2015 09:22:23.000000 - ERROR] service=CompanyService method=getCompaniesByStatement responseTime=105 requestId=50e1017013baf881cb27ef22f9645e47 server=ads.google.com isFault=1 faultMessage=[AuthenticationError.NO_NETWORKS_TO_ACCESS @ ]
+[Oct 06 2015 09:31:32.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=2496 requestId=b67c97b6c078a137959b1c83bdf6afe5 server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:31:36.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=3882 requestId=6a9fcaf0f50112f7c2728d65f59b83ab server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:31:40.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=2954 requestId=5162e8c7b6ea02e718d4662cb3c156ad server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:31:45.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=4152 requestId=ecf4c3096d7af0bc3ae1b3fa4376af30 server=ads.google.com isFault=0 faultMessage=null
+[Oct 06 2015 09:31:50.000000 - INFO] service=CompanyService method=getCompaniesByStatement responseTime=4166 requestId=707110e444b1ef6a7f2d868a0dba0352 server=ads.google.com isFault=0 faultMessage=null
